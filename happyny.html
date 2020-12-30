@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년을 보내며..</title>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        body {
+            background-color: #9b070f;
+        }
+        .envelope {
+            width: 200px;
+            height: 200px;
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+        .message {
+            color: white;
+            text-align: center;
+        }
+        .letter-close {
+            display: block;
+        }
+        .letter-open {
+            display: none;
+        }
+        .rtan {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto 0 auto;
+            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/rtan.gif');
+            background-size: cover;
+            background-position: center;
+            background-color: white;
+            border-radius: 50%;
+            border: 10px solid white;
+            box-shadow: 0px 0px 10px 0px white; 
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .letter {
+            background-color: ivory;
+            width: 500px;
+            height:350px;
+            margin: auto;
+            color: rgb(90, 17, 17);
+            font-size: 24px;
+            padding: 30px;
+            line-height: 48px;
+            box-shadow: 0 0 10px 0 white;
+        }
+        .letter p {
+            text-align: right;
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 760px) {
+            .envelope {
+                margin-top: 150px;
+            }
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 20px auto;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .letter {
+                width: 300px;
+                padding: 20px;
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+        
+    </style>
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+    </script>
+</head>
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="message">Open the envelop!</h2>
+    </div>
+    <div class="letter-open">
+        <div class="rtan"></div>
+    <h1>2020년 수고 많았어!</h1>
+    <div class="letter">
+        친구야! 올 한해도 건강하게 잘 지내주어 고마워.<br/>
+        집에만 있기 답답한데 밖에도 많이 못나가고 놀러도 많이 못가서 조금 우울한 날들도 많았지?<br/>
+        1년 동안 수고 많았고, 다음 해에는 웃는 날이 더더더 많을거야:)<br/>
+        항상 고맙고 내년에 건강하게 다시 만나자!<br/>
+        <p>2020.12.30 서지가</p>
+    </div>
+    </div>
+</body>
+</html>
